@@ -6,19 +6,30 @@
     <title>Desafio Parte 2</title>
     <style>
         table{
+        
             width: 500px;
             border-collapse: collapse;
         }
         th,td{
-
+            text-align: center;
             border: 1px solid black ;
             padding: 10px;
         }
-.linha{
-    width: 10px;
-    height: 10px;
-    padding: 2px;
-}
+        .teste{
+            text-align: center;
+            background-color: rgb(173, 173, 173);
+            color: white;
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.0em;
+        }
+        .outro{
+            text-align: center;
+             background-color: rgb(173, 173, 173);
+            color: white;
+
+        }
+
 
     </style>
 </head>
@@ -33,20 +44,27 @@
 
 <Thead>
     <tr>
-        <th>Área</th>
+        <th rowspan="2" scope="col" class="outro">Área</th>
         
-        <th rowspan="2">Disciplinas</th>
-        
-        
-        <th>Notas</th>
+        <th rowspan="2" scope="col" class="outro">Disciplinas</th>
         
         
-        
-        <th></th>
+        <th colspan="2" scope="colgroup" class="outro">Notas</th>
         
         
         
-        <th>Média</th>
+        
+        
+        
+        
+        <th rowspan="2" scope="col" class="outro">Média</th>
+        
+        </tr>
+        <tr>
+            <th scope="row" class="outro">Nota 1</th>
+            <th scope="row" class="outro">Nota 2</th>
+            
+            
         
         </tr>
 
@@ -57,7 +75,7 @@
     
     <tr>
     
-        <th rowspan="4">Exatas</th>
+        <th rowspan="4" scope="rowgroup">Exatas</th>
         
         <td>Matemática</td>
         <td>0.0</td>
@@ -65,16 +83,16 @@
         <td>0.0</td>
         
     </tr>
-    <tr>
-        <th>Outro</th>
+    <tr  scope="row">
+        
         <td >Fisica</td>
         <td>0.0</td>
         <td>0.0</td>
         <td>0.0</td>
     
     </tr>
-    <tr>
-        <th>Outro</th>
+    <tr scope="row">
+    
         <td>Quimica</td>
         <td>0.0</td>
         <td>0.0</td>
@@ -82,8 +100,8 @@
     
     </tr>
     
-    <tr>
-        <th>Outro</th>
+    <tr scope="row">
+        
         <td >Biologia</td>
         <td>0.0</td>
         <td>0.0</td>
@@ -92,8 +110,28 @@
     </tr>
     <tr>
 
-<th colspan="5">Média Exatas</th>
+<th colspan="4" class="teste" scope="row">Média Exatas</th>
+<td class="outro">0.0</td>
+
+    </tr>
+    <tr>
+<th rowspan="2" scope="rowgroup">Humanas</th>
+<td>História</td>
 <td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+    </tr>
+    <tr  scope="row">
+<td>Geografia</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+
+    </tr>
+    <tr  scope="row">
+<th colspan="4" class="teste" scope="row">Média de Humanas</th>
+<td class="outro">0.0</td>
+
 
     </tr>
 
